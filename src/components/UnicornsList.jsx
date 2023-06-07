@@ -34,8 +34,10 @@ function UnicornsList() {
   }
 
   const cleanInputs = () => {
-    setName("");
-    setAge(0);
+    setData({
+      name: '',
+      age: 0
+    })
   }
 
   const handleSubmit = async (e) => {
@@ -54,7 +56,6 @@ function UnicornsList() {
       ...data,
       [e.target.name]: e.target.value
     });
-    cleanInputs();
   }
 
   const handleDelete = async (id) => {

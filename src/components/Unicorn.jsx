@@ -38,7 +38,6 @@ function Unicorn({ id, name, age, handleDelete, handleEdit }) {
       ...data,
       [e.target.name]: e.target.value
     });
-    cleanInputs();
   }
 
   return (
